@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>HWR Berlin App</title>
+	
+		<!-- Web App -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+		<!-- App Logo -->
+		<link rel="apple-touch-icon-precomposed" href="images/logo.png" />
+	
+		<!-- Schriftsatz -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+	
+		<!-- CSS -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.css" />
+		<link rel="stylesheet" href="styles/styles.css" />
+	
+		<!-- Javascrpit -->
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.js"></script>
+	</head>
+	
+	<body>
+	<!-- Startseite Seite -->
+		<div data-role="page" id="startseite">
+		
+			<!-- Seiteninhalt -->
+			<div data-role="content">
+			
+				<!-- Logo -->
+				<div>
+					<img src="images/HWRBerlin_Logo_RGB.jpg" class="schatten" />
+				</div>
+				
+				<!-- Login -->
+				<div id="startinhalt" style="display: block">
+					<form id="loginForm">
+						
+						<!-- Benutzer -->
+						<div data-role="fieldcontain" class="ui-hide-label">
+							<label for="username">Email:</label>
+							<input type="text" name="Email" id="username" value="" placeholder="Email" />
+						</div>
+						
+						<!-- Passwort -->
+						<div data-role="fieldcontain" class="ui-hide-label">
+							<label for="password">Password:</label>
+							<input type="password" name="password" id="password" value="" placeholder="Passwort" />
+						</div>
+						
+						<!-- Button -->
+						<input type="button" value="Login" id="submitButton" onClick="handleLogin()">
+					</form>
+					
+					<!-- Registrieren -->
+					<hr>
+						Noch keinen Account? <a href="SignIn.html">Registrieren</a>
+					</hr>
+				</div>
+
+			</div>
+
+			<!-- Fußzeile -->
+			<div data-role="footer" data-id="footernav" data-tap-toggle="false" data-position="fixed" data-theme="c">
+				
+				<!-- Navbar -->
+				<div data-role="navbar" data-theme="b">
+					<ul>
+						<li><a href="kontakte.html" data-icon="kontakte" data-transition="fade"></a></li>				
+						<li><a href="chat.html" data-icon="chat" data-transition="fade"></a></li>
+						<!-- <li><a href="datei.html" data-icon="datei" data-transition="fade"></a></li> -->
+						<li><a href="profil.html" data-icon="profil" data-transition="fade"></a></li>
+						<li><a href="einstellung.html" data-icon="einstellung" data-transition="fade"></a></li>
+					</ul>
+				</div> 
+			</div>
+   
+		</div>
+	</body>
+</html>
