@@ -21,44 +21,18 @@
 		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.js"></script>
 	</head>
-	
-	<body>
-	<!-- Startseite Seite -->
+
+	<body> 
+		<!-- Kontakt Seite -->
 		<div data-role="page" id="startseite">
+		
+			<!-- Kopfzeile -->
+			<div data-role="header" data-position="fixed" data-theme="c">
+				<h1>Kontakte</h1>
+			</div>
 		
 			<!-- Seiteninhalt -->
 			<div data-role="content">
-			
-				<!-- Logo -->
-				<div>
-					<img src="images/HWRBerlin_Logo_RGB.jpg" class="schatten" />
-				</div>
-				
-				<!-- Login -->
-				<div id="startinhalt" style="display: block">
-					<form id="loginForm">
-						
-						<!-- Benutzer -->
-						<div data-role="fieldcontain" class="ui-hide-label">
-							<label for="username">Email:</label>
-							<input type="text" name="Email" id="username" value="" placeholder="Email" />
-						</div>
-						
-						<!-- Passwort -->
-						<div data-role="fieldcontain" class="ui-hide-label">
-							<label for="password">Password:</label>
-							<input type="password" name="password" id="password" value="" placeholder="Passwort" />
-						</div>
-						
-						<!-- Button -->
-						<input type="button" value="Login" id="submitButton" onClick="handleLogin()">
-					</form>
-					
-					<!-- Registrieren -->
-					<hr>
-						Noch keinen Account? <a href="SignIn.html">Registrieren</a>
-					</hr>
-				</div>
 
 			</div>
 
@@ -76,7 +50,7 @@
 					</ul>
 				</div> 
 			</div>
-   
+    
 		</div>
 	</body>
 </html>

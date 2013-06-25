@@ -1,0 +1,56 @@
+.schatten {
+	width:95%;
+	height:auto;
+	border:6px solid #fff;
+	box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.85);
+	-webkit-transform:rotate(2deg);
+}
+
+.profilbild{
+	width: 60%;
+	height: auto;
+	border:6px solid #fff;
+	box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.85);
+}
+
+[data-role=content] h1 {
+	font-family: 'Veranda', cursive;
+	font-weight: normal;
+	color:#173b84;
+	font-size:2em;
+	line-height:1em;
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
+	text-align:center;
+}
+
+[data-role=content] p, [data-role=content] li {
+	font-family: 'Veranda', serif;
+}
+
+#startinhalt{
+	margin-top: 40px;
+}
+
+
+/* ####### Navigationsleiste  ######## */
+
+.ui-icon-kontakte{
+	background-image: url("../images/kontakte.jpg");
+	background-size: 18px 18px;
+}
+.ui-icon-chat {
+	background-image: url("../images/chat.jpg");
+	background-size: 18px 18px;
+}
+.ui-icon-datei {
+	background-image: url("../images/download.jpg");
+	background-size: 18px 18px;
+}
+.ui-icon-profil {
+	background-image: url("../images/profil.jpg");
+	background-size: 18px 18px;
+}
+.ui-icon-einstellung {
+	background-image: url("../images/einstellung.jpg");
+	background-size: 18px 18px;
+}

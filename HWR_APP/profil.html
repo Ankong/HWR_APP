@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-	<head>
+    <head>
 		<title>HWR Berlin App</title>
 	
 		<!-- Web App -->
@@ -21,45 +21,42 @@
 		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.js"></script>
 	</head>
-	
-	<body>
-	<!-- Startseite Seite -->
-		<div data-role="page" id="startseite">
+
+	<body> 
+		<!-- Profil Seite -->
+		<div data-role="page" id="profil">
+		
+			<!-- Kopfzeile -->
+			<div data-role="header" data-position="fixed" data-theme="c">
+				<h1>Profil</h1>
+			</div>
 		
 			<!-- Seiteninhalt -->
 			<div data-role="content">
-			
-				<!-- Logo -->
-				<div>
-					<img src="images/HWRBerlin_Logo_RGB.jpg" class="schatten" />
-				</div>
-				
-				<!-- Login -->
-				<div id="startinhalt" style="display: block">
-					<form id="loginForm">
-						
-						<!-- Benutzer -->
-						<div data-role="fieldcontain" class="ui-hide-label">
-							<label for="username">Email:</label>
-							<input type="text" name="Email" id="username" value="" placeholder="Email" />
-						</div>
-						
-						<!-- Passwort -->
-						<div data-role="fieldcontain" class="ui-hide-label">
-							<label for="password">Password:</label>
-							<input type="password" name="password" id="password" value="" placeholder="Passwort" />
-						</div>
-						
-						<!-- Button -->
-						<input type="button" value="Login" id="submitButton" onClick="handleLogin()">
-					</form>
+				<div id="seiteninhalt" style="display: block">
 					
-					<!-- Registrieren -->
-					<hr>
-						Noch keinen Account? <a href="SignIn.html">Registrieren</a>
-					</hr>
+					<div>
+						<img src="images/kontaktbild.jpg" align="center" class="profilbild">
+					</div>
+					
+					<ul data-role="listview" data-divider-theme="b" data-inset="true">
+						<li data-role="list-divider" role="heading">
+							Informationen
+						</li>
+						<li>
+							Vorname
+						</li>
+						<li>
+							Nachname
+						</li>
+						<li>
+							Studienfach
+						</li>
+						<li>
+							Semester
+						</li>
+					</ul>
 				</div>
-
 			</div>
 
 			<!-- Fußzeile -->
@@ -76,7 +73,7 @@
 					</ul>
 				</div> 
 			</div>
-   
+    
 		</div>
 	</body>
 </html>
